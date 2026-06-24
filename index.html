@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kshitiz Kharal | Azure Administrator | Network Engineer</title>
+  <meta name="description" content="Kshitiz Kharal — Microsoft Certified Azure Administrator and Cisco CCST Networking professional based in Sydney, Australia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">KK</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="mailto:kshitizkharal155@gmail.com" class="nav-cta">Get in Touch</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas id="particles"></canvas>
+  <div class="hero-content">
+    <div class="availability-badge">
+      <span class="pulse-dot"></span>
+      Open to Work · Australia Wide
+    </div>
+    <h1 class="hero-name">Kshitiz Kharal</h1>
+    <div class="hero-role">
+      <span id="roleText"></span><span class="cursor-blink">|</span>
+    </div>
+    <p class="hero-tagline">Azure Administrator (AZ-104) · Cisco CCST · Network Engineer · Infrastructure Automation</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section section-alt" id="about">
+  <div class="container">
+    <h2 class="section-title fade-in">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p>I am a <strong>Microsoft Certified Azure Administrator (AZ-104)</strong> and <strong>Cisco CCST Networking</strong> certified professional with a strong foundation in Microsoft infrastructure, scripting, and automation. I am currently completing a <strong>Master of ICT Research</strong> at Melbourne Institute of Technology, Sydney, with a focus on multi-cloud network automation.</p>
+        <p>I am proficient in <strong>Windows Server, Microsoft Entra ID, Microsoft 365, and PowerShell</strong>, and experienced in building automated workflows and API integrations through research and internship work. My thesis involves developing a Python and Terraform pipeline that automates IPsec VPN connectivity between Azure and AWS.</p>
+        <p>I am eager to apply these skills in an enterprise IT support, systems administration, or network engineering role where I can contribute from day one.</p>
+
+        <div class="looking-for">
+          <h3>What I Am Looking For</h3>
+          <div class="looking-tags">
+            <span class="tag tag-role">Azure Administrator</span>
+            <span class="tag tag-role">Network Engineer</span>
+            <span class="tag tag-role">IT Support Engineer</span>
+            <span class="tag tag-role">Systems Administrator</span>
+            <span class="tag tag-role">Cloud Engineer</span>
+            <span class="tag tag-role">NOC Engineer</span>
+            <span class="tag tag-location">Sydney</span>
+            <span class="tag tag-location">Remote</span>
+            <span class="tag tag-location">Australia Wide</span>
+            <span class="tag tag-type">Full-Time</span>
+            <span class="tag tag-type">Grad Role</span>
+          </div>
+          <div class="visa-note">
+            <span class="check-icon">&#x2713;</span>
+            <span>Full working rights in Australia · Student Visa (Research Stream) with no hour restrictions</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="about-stats">
+          <div class="stat-card fade-in">
+            <span class="stat-num"><span class="count-num" data-target="5" data-suffix="">5</span><span class="stat-accent">+</span></span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card fade-in">
+            <span class="stat-num"><span class="count-num" data-target="3" data-suffix="">3</span><span class="stat-accent">+</span></span>
+            <span class="stat-label">Cloud Platforms</span>
+          </div>
+          <div class="stat-card fade-in">
+            <span class="stat-num"><span class="count-num" data-target="3" data-suffix="">3</span><span class="stat-accent">+</span></span>
+            <span class="stat-label">Years in IT</span>
+          </div>
+          <div class="stat-card fade-in">
+            <span class="stat-num"><span class="count-num" data-target="10" data-suffix="">10</span><span class="stat-accent">+</span></span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="container">
+    <h2 class="section-title fade-in">Technical Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-header">
+          <div class="skill-icon-wrap icon-net">NET</div>
+          <h3>Networking</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag hot">TCP/IP</span>
+          <span class="skill-tag hot">DNS / DHCP</span>
+          <span class="skill-tag hot">VLAN</span>
+          <span class="skill-tag hot">VPN</span>
+          <span class="skill-tag hot">IPsec</span>
+          <span class="skill-tag">Wireshark</span>
+          <span class="skill-tag">Cisco IOS</span>
+          <span class="skill-tag">pfSense</span>
+          <span class="skill-tag">Azure VNet</span>
+          <span class="skill-tag">NSGs</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-header">
+          <div class="skill-icon-wrap icon-cloud">AZ</div>
+          <h3>Cloud and IaC</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag hot">Azure (AZ-104)</span>
+          <span class="skill-tag hot">Terraform</span>
+          <span class="skill-tag hot">Bicep</span>
+          <span class="skill-tag hot">AWS</span>
+          <span class="skill-tag">Azure CLI</span>
+          <span class="skill-tag">Azure DevOps</span>
+          <span class="skill-tag">Azure VPN Gateway</span>
+          <span class="skill-tag">AWS VPC</span>
+          <span class="skill-tag">Infrastructure as Code</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-header">
+          <div class="skill-icon-wrap icon-sys">SYS</div>
+          <h3>Systems and Administration</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag hot">Windows Server</span>
+          <span class="skill-tag hot">Microsoft Entra ID</span>
+          <span class="skill-tag hot">Microsoft 365</span>
+          <span class="skill-tag hot">Linux</span>
+          <span class="skill-tag">Active Directory</span>
+          <span class="skill-tag">Group Policy</span>
+          <span class="skill-tag">Azure Portal</span>
+          <span class="skill-tag">AWS Console</span>
+          <span class="skill-tag">Git / GitHub</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-in">
+        <div class="skill-group-header">
+          <div class="skill-icon-wrap icon-code">&lt;/&gt;</div>
+          <h3>Programming and Scripting</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag hot">Python</span>
+          <span class="skill-tag hot">PowerShell</span>
+          <span class="skill-tag hot">Bash</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">JSON / YAML</span>
+          <span class="skill-tag">Subprocess Automation</span>
+          <span class="skill-tag">Logging and Monitoring</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section section-alt" id="certifications">
+  <div class="container">
+    <h2 class="section-title fade-in">Certifications</h2>
+    <div class="cert-grid">
+
+      <div class="cert-card cert-microsoft fade-in">
+        <div class="cert-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><path d="M32.49 8.02L8 69.58l22.28 16.4 36.39-50.25L32.49 8.02z" fill="#df2935"/><path d="M35.62 77.54L63.5 72.4l22.5 6.17L60.43 20.8 35.62 77.54z" fill="#292f36" opacity=".75"/></svg>
+        </div>
+        <div>
+          <div class="cert-issuer">Microsoft</div>
+          <div class="cert-name">Azure Administrator Associate</div>
+          <div class="cert-code">AZ-104</div>
+        </div>
+        <div class="cert-date">Earned April 2026</div>
+        <span class="cert-status-badge earned">Earned</span>
+      </div>
+
+      <div class="cert-card cert-cisco fade-in">
+        <div class="cert-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="40" width="11" height="24" rx="3" fill="#df2935"/><rect x="27" y="30" width="11" height="44" rx="3" fill="#df2935"/><rect x="44" y="20" width="11" height="64" rx="3" fill="#df2935" opacity=".85"/><rect x="61" y="30" width="11" height="44" rx="3" fill="#df2935"/><rect x="78" y="40" width="11" height="24" rx="3" fill="#df2935" opacity=".7"/></svg>
+        </div>
+        <div>
+          <div class="cert-issuer">Cisco</div>
+          <div class="cert-name">Certified Support Technician Networking</div>
+          <div class="cert-code">CCST Networking</div>
+        </div>
+        <div class="cert-date">Earned July 2025</div>
+        <span class="cert-status-badge earned">Earned</span>
+      </div>
+
+      <div class="cert-card cert-forage fade-in">
+        <div class="cert-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="38" fill="none" stroke="#df2935" stroke-width="7"/><path d="M34 50 h32 M50 34 v32" stroke="#ff6b6b" stroke-width="6" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <div class="cert-issuer">Datacom · Forage</div>
+          <div class="cert-name">Introduction to Cloud Job Simulation</div>
+          <div class="cert-code">Cloud Fundamentals</div>
+        </div>
+        <div class="cert-date">Earned May 2026</div>
+        <span class="cert-status-badge earned">Earned</span>
+      </div>
+
+      <div class="cert-card cert-itil fade-in">
+        <div class="cert-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="18" y="18" width="64" height="64" rx="10" fill="none" stroke="#ff6b6b" stroke-width="7"/><text x="50" y="60" text-anchor="middle" font-size="26" font-weight="900" fill="#df2935" font-family="sans-serif">IT</text></svg>
+        </div>
+        <div>
+          <div class="cert-issuer">LinkedIn Learning</div>
+          <div class="cert-name">Learning ITIL Foundation</div>
+          <div class="cert-code">ITIL 4</div>
+        </div>
+        <div class="cert-date">Earned May 2026</div>
+        <span class="cert-status-badge earned">Earned</span>
+      </div>
+
+      <div class="cert-card cert-forage fade-in">
+        <div class="cert-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="28" width="72" height="50" rx="8" fill="none" stroke="#df2935" stroke-width="6"/><path d="M30 52 h16 M30 64 h28 M62 44 l8 8 -8 8" stroke="#ff6b6b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </div>
+        <div>
+          <div class="cert-issuer">Datacom · Forage</div>
+          <div class="cert-name">Service Desk Job Simulation</div>
+          <div class="cert-code">IT Service Management</div>
+        </div>
+        <div class="cert-date">Earned May 2026</div>
+        <span class="cert-status-badge earned">Earned</span>
+      </div>
+
+      <div class="cert-card cert-progress fade-in">
+        <div class="cert-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="40" width="11" height="24" rx="3" fill="#ff6b6b" opacity=".45"/><rect x="27" y="30" width="11" height="44" rx="3" fill="#ff6b6b" opacity=".55"/><rect x="44" y="20" width="11" height="64" rx="3" fill="#ff6b6b" opacity=".75"/><rect x="61" y="30" width="11" height="44" rx="3" fill="#ff6b6b" opacity=".55"/><rect x="78" y="40" width="11" height="24" rx="3" fill="#ff6b6b" opacity=".4"/></svg>
+        </div>
+        <div>
+          <div class="cert-issuer">Cisco</div>
+          <div class="cert-name">Certified Network Associate</div>
+          <div class="cert-code">CCNA</div>
+        </div>
+        <div class="cert-date">In Progress · 2026</div>
+        <span class="cert-status-badge progress">In Progress</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <h2 class="section-title fade-in">Projects</h2>
+
+    <div class="featured-project fade-in">
+      <div class="fp-header">
+        <div>
+          <span class="fp-label">Featured Project · Masters Research</span>
+          <h3 class="fp-title">PL-IaC Approach for Multi-Cloud Orchestration Automation</h3>
+          <div class="fp-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Terraform</span>
+            <span class="tech-tag">Azure</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">IPsec VPN</span>
+            <span class="tech-tag">IaC</span>
+            <span class="tech-tag">DevOps</span>
+          </div>
+        </div>
+        <a href="https://github.com/kshitiz-Kharal/PL-IaC_MultiCloud_Orchestration" target="_blank" rel="noopener" class="btn-outline">View on GitHub</a>
+      </div>
+
+      <p style="color:var(--text-dim);font-size:.93rem;line-height:1.8;margin-bottom:1rem;">
+        An automated Infrastructure-as-Code deployment pipeline for IPsec VPN connectivity between Azure and AWS, applying secure DevOps practices with single-command deploy and teardown. The system resolves the circular cloud dependency problem using staged deployments and runtime variable injection.
+      </p>
+
+      <div class="arch-diagram">
+        <div class="arch-diagram-label">Network Architecture</div>
+        <div class="arch-canvas">
+          <div class="arch-cloud arch-azure">
+            <div class="arch-cloud-name azure-name">Microsoft Azure</div>
+            <div class="arch-services">
+              <div class="arch-service">Virtual Network (VNet)</div>
+              <div class="arch-service">VPN Gateway (Route-Based)</div>
+              <div class="arch-service">Local Network Gateway</div>
+              <div class="arch-service">Connection Resource</div>
+            </div>
+          </div>
+          <div class="arch-tunnel">
+            <div class="arch-tunnel-label">IPsec / IKEv2</div>
+            <div class="arch-tunnel-track">
+              <div class="arch-packet"></div>
+            </div>
+            <div class="arch-orchestrator">
+              <span>Python Orchestrator</span>
+              <small>Terraform + Runtime Injection</small>
+            </div>
+          </div>
+          <div class="arch-cloud arch-aws">
+            <div class="arch-cloud-name aws-name">Amazon AWS</div>
+            <div class="arch-services">
+              <div class="arch-service">VPC</div>
+              <div class="arch-service">Virtual Private Gateway</div>
+              <div class="arch-service">Customer Gateway</div>
+              <div class="arch-service">VPN Connection</div>
+            </div>
+          </div>
+        </div>
+        <div class="arch-footer">Encrypted tunnel · Single-command deploy and teardown · End-to-end connectivity verified</div>
+      </div>
+
+      <div class="fp-highlights">
+        <div class="fp-highlight">
+          <div class="fp-hl-icon">&#x2699;</div>
+          <div>
+            <strong>Staged Deployment</strong>
+            <p>Resolves circular cloud dependency through staged Terraform deployments with runtime variable injection between phases.</p>
+          </div>
+        </div>
+        <div class="fp-highlight">
+          <div class="fp-hl-icon">&#x1F512;</div>
+          <div>
+            <strong>Secure Secret Handling</strong>
+            <p>Generated pre-shared keys propagate through orchestrator memory and files excluded from version control. Key Vault integration planned.</p>
+          </div>
+        </div>
+        <div class="fp-highlight">
+          <div class="fp-hl-icon">&#x2705;</div>
+          <div>
+            <strong>End-to-End Verified</strong>
+            <p>Connectivity validated using Azure Run Command, confirming data-plane operation beyond just control-plane provisioning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary-project fade-in">
+      <div class="sp-header">
+        <div>
+          <h3 class="sp-title">Python Port Scanner</h3>
+          <div class="fp-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">python-nmap</span>
+            <span class="tech-tag">CLI</span>
+            <span class="tech-tag">Network Security</span>
+          </div>
+        </div>
+        <a href="https://github.com/kshitiz-Kharal/port-scanner" target="_blank" rel="noopener" class="btn-outline-sm">GitHub</a>
+      </div>
+      <p>A CLI port scanner that wraps Nmap's service-version detection (<code>-sV</code>) and default scripts (<code>-sC</code>) for authorised network reconnaissance. Implements IPv4 validation using Python's <code>ipaddress</code> library with port-range parsing, input validation, and error recovery. Outputs per-port state, reason, service name, and version for each target across user-defined port ranges.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <h2 class="section-title fade-in">Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item fade-in">
+        <div class="tl-marker tl-marker-active"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <div>
+              <div class="tl-title">Senior Catering Attendant</div>
+              <div class="tl-company">Dnata Catering · Sydney, NSW</div>
+            </div>
+            <span class="tl-date">May 2026 · Present</span>
+          </div>
+          <div class="tl-note">Working in a high-volume airline catering facility across meal assembly, food preparation, and cart stocking within strict service-level timeframes. Maintains compliance with HACCP food safety standards and aviation hygiene protocols. Operates reliably across rotating early-morning shifts in a fast-paced, team-dependent environment requiring sustained attention to detail and process discipline.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <div>
+              <div class="tl-title">Network and Cybersecurity Project Intern</div>
+              <div class="tl-company">MA Engineering · Remote, Australia</div>
+            </div>
+            <span class="tl-date">Mar 2024 · Nov 2024</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Engineered an IoT smart-security prototype for an industry client, integrating ESP32-CAM, Arduino, RFID access, and environmental sensors on a unified board.</li>
+            <li>Built motion-triggered image capture pushed to a Telegram bot over HTTPS, plus RFID-based access control with a stored allow list.</li>
+            <li>Integrated the system with Arduino IoT Cloud for remote monitoring, applied authentication, encryption, and secure-coding practices.</li>
+            <li>Diagnosed and resolved GPIO conflicts, ESP32 memory limits, and Wi-Fi and cloud sync issues through non-blocking code design.</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tl-tag">IoT</span>
+            <span class="tl-tag">ESP32</span>
+            <span class="tl-tag">Arduino</span>
+            <span class="tl-tag">RFID</span>
+            <span class="tl-tag">Network Security</span>
+            <span class="tl-tag">Cloud Integration</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="container">
+    <h2 class="section-title fade-in">Education</h2>
+    <div class="edu-grid">
+
+      <div class="edu-card edu-active fade-in">
+        <div class="edu-level">M.ICT</div>
+        <div class="edu-body">
+          <h3>Master of ICT Research</h3>
+          <div class="edu-spec">Focus: Multi-Cloud Network Orchestration Automation</div>
+          <div class="edu-school">Melbourne Institute of Technology · Sydney Campus</div>
+          <span class="edu-date">Mar 2025 · Present</span>
+        </div>
+        <span class="edu-current-badge">Current</span>
+      </div>
+
+      <div class="edu-card fade-in">
+        <div class="edu-level">B.Net</div>
+        <div class="edu-body">
+          <h3>Bachelor of Networking</h3>
+          <div class="edu-spec">Major: Cybersecurity</div>
+          <div class="edu-school">Melbourne Institute of Technology · Sydney Campus</div>
+          <span class="edu-date">Mar 2022 · Nov 2024</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <h2 class="section-title fade-in" style="display:block;text-align:center">Get in Touch</h2>
+    <div class="contact-wrap fade-in">
+      <p class="contact-intro">I am actively looking for Azure administration, network engineering, and IT support roles in Australia. If you have an opportunity that matches my profile, I would be glad to hear from you.</p>
+      <div class="contact-links">
+
+        <a href="mailto:kshitizkharal155@gmail.com" class="contact-card">
+          <div class="cc-icon">@</div>
+          <div>
+            <span class="cc-label">Email</span>
+            <span class="cc-value">kshitizkharal155@gmail.com</span>
+          </div>
+        </a>
+
+        <a href="tel:+61416469449" class="contact-card">
+          <div class="cc-icon" style="font-size:.75rem;font-weight:700;">&#x260E;</div>
+          <div>
+            <span class="cc-label">Phone</span>
+            <span class="cc-value">+61 416 469 449</span>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/kshitizkharal" target="_blank" rel="noopener" class="contact-card">
+          <div class="cc-icon" style="font-weight:800;">in</div>
+          <div>
+            <span class="cc-label">LinkedIn</span>
+            <span class="cc-value">linkedin.com/in/kshitizkharal</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/kshitiz-Kharal" target="_blank" rel="noopener" class="contact-card">
+          <div class="cc-icon" style="font-family:var(--mono);font-size:.7rem;font-weight:700;">git</div>
+          <div>
+            <span class="cc-label">GitHub</span>
+            <span class="cc-value">github.com/kshitiz-Kharal</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Built by <span>Kshitiz Kharal</span> · 2026 · Azure Administrator · Network Engineer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
