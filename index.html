@@ -21,6 +21,7 @@
     <div class="nav-links" id="navLinks">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#network-lab">Network Lab</a>
       <a href="#certifications">Certifications</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
@@ -100,8 +101,8 @@
             <span class="stat-label">Cloud Platforms</span>
           </div>
           <div class="stat-card fade-in">
-            <span class="stat-num"><span class="count-num" data-target="3" data-suffix="">3</span><span class="stat-accent">+</span></span>
-            <span class="stat-label">Years in IT</span>
+            <span class="stat-num"><span class="count-num" data-target="2" data-suffix="">2</span><span class="stat-accent"></span></span>
+            <span class="stat-label">Real World Projects</span>
           </div>
           <div class="stat-card fade-in">
             <span class="stat-num"><span class="count-num" data-target="10" data-suffix="">10</span><span class="stat-accent">+</span></span>
@@ -194,6 +195,275 @@
   </div>
 </section>
 
+<!-- NETWORK LAB -->
+<section class="section section-alt" id="network-lab">
+  <div class="container">
+    <h2 class="section-title fade-in">Network Lab</h2>
+    <div class="nl-project fade-in">
+      <div class="fp-header">
+        <div>
+          <span class="fp-label">CCNA Lab · Cisco Packet Tracer</span>
+          <h3 class="fp-title">Enterprise Campus Network Design</h3>
+          <div class="fp-tech">
+            <span class="tech-tag">HSRP</span>
+            <span class="tech-tag">VLANs</span>
+            <span class="tech-tag">VTP</span>
+            <span class="tech-tag">Inter-VLAN Routing</span>
+            <span class="tech-tag">WLC</span>
+            <span class="tech-tag">RADIUS</span>
+            <span class="tech-tag">DHCP</span>
+            <span class="tech-tag">DNS</span>
+            <span class="tech-tag">Cisco IOS</span>
+          </div>
+        </div>
+      </div>
+      <p style="color:var(--text-dim);font-size:.93rem;line-height:1.8;margin-bottom:1.5rem;">
+        Designed and fully configured a multi-layer enterprise campus network from scratch in Cisco Packet Tracer as part of CCNA preparation. The topology covers dual-ISP gateway redundancy, VLAN segmentation across four access switches, centralised wireless infrastructure, and a single-server architecture running DHCP, DNS, and RADIUS services.
+      </p>
+
+      <!-- Annotated Network Diagram -->
+      <div class="nl-diagram-wrap">
+        <svg viewBox="0 0 960 548" xmlns="http://www.w3.org/2000/svg" width="100%" style="min-width:600px;display:block;">
+          <defs>
+            <path id="pkt1" d="M 67 504 L 92 342 L 430 255 L 190 143 L 160 60"/>
+            <filter id="pk-glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="2.5" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <style>
+            .nl { font-family: 'Inter', -apple-system, sans-serif; }
+            @keyframes nlHsrp { 0%,100%{opacity:.2;stroke-width:1.5} 50%{opacity:1;stroke-width:2.5} }
+            @keyframes nlVtp  { 0%{stroke-dashoffset:120;opacity:.9} 100%{stroke-dashoffset:0;opacity:0} }
+            @keyframes nlWifi { 0%{r:8;opacity:.75;stroke-width:1.5} 100%{r:24;opacity:0;stroke-width:.5} }
+            .nl-hsrp { animation: nlHsrp 1.8s ease-in-out infinite; }
+            .nl-vtp0  { stroke-dasharray:120; stroke-dashoffset:120; animation: nlVtp 3s ease-in-out infinite; }
+            .nl-vtp1  { stroke-dasharray:120; stroke-dashoffset:120; animation: nlVtp 3s ease-in-out .6s infinite; }
+            .nl-vtp2  { stroke-dasharray:120; stroke-dashoffset:120; animation: nlVtp 3s ease-in-out 1.2s infinite; }
+            .nl-vtp3  { stroke-dasharray:120; stroke-dashoffset:120; animation: nlVtp 3s ease-in-out 1.8s infinite; }
+            .nl-wa    { animation: nlWifi 2.2s ease-out infinite; }
+            .nl-wb    { animation: nlWifi 2.2s ease-out .75s infinite; }
+            .nl-wc    { animation: nlWifi 2.2s ease-out infinite; }
+            .nl-wd    { animation: nlWifi 2.2s ease-out .75s infinite; }
+          </style>
+
+          <!-- ── ZONE BACKGROUNDS ── -->
+          <rect x="8" y="12" width="944" height="148" rx="11" fill="rgba(223,41,53,.03)" stroke="rgba(223,41,53,.18)" stroke-width="1" stroke-dasharray="5,4"/>
+          <text x="22" y="27" class="nl" font-size="8.5" font-weight="700" fill="rgba(223,41,53,.45)" letter-spacing=".8">WAN · VLAN 200</text>
+
+          <rect x="8" y="286" width="944" height="252" rx="11" fill="rgba(26,35,50,.025)" stroke="rgba(26,35,50,.08)" stroke-width="1" stroke-dasharray="5,4"/>
+          <text x="22" y="301" class="nl" font-size="8.5" font-weight="700" fill="rgba(26,35,50,.3)" letter-spacing=".8">ACCESS LAYER · VLANs 10 · 20 · 30 · 40</text>
+
+          <rect x="345" y="190" width="270" height="70" rx="9" fill="rgba(223,41,53,.045)" stroke="rgba(223,41,53,.22)" stroke-width="1"/>
+          <text x="358" y="204" class="nl" font-size="7.5" font-weight="700" fill="rgba(223,41,53,.55)" letter-spacing=".8">DISTRIBUTION · LAYER 3</text>
+
+          <!-- ── STATIC LINKS ── -->
+          <!-- ISP to Routers -->
+          <line x1="160" y1="58" x2="160" y2="93" stroke="#8a9bb0" stroke-width="2.5"/>
+          <line x1="800" y1="58" x2="800" y2="93" stroke="#8a9bb0" stroke-width="2.5"/>
+          <!-- Routers to Core -->
+          <line x1="192" y1="141" x2="400" y2="196" stroke="#292f36" stroke-width="2"/>
+          <line x1="768" y1="141" x2="560" y2="196" stroke="#292f36" stroke-width="2"/>
+          <!-- Core to Switches (trunk) -->
+          <line x1="405" y1="255" x2="95"  y2="298" stroke="#292f36" stroke-width="1.8"/>
+          <line x1="440" y1="258" x2="285" y2="298" stroke="#292f36" stroke-width="1.8"/>
+          <line x1="520" y1="258" x2="628" y2="298" stroke="#292f36" stroke-width="1.8"/>
+          <line x1="555" y1="255" x2="840" y2="298" stroke="#292f36" stroke-width="1.8"/>
+          <!-- Switches to infrastructure -->
+          <line x1="78"  y1="340" x2="118" y2="408" stroke="#c5cdd6" stroke-width="1.4"/>
+          <line x1="280" y1="340" x2="278" y2="408" stroke="#c5cdd6" stroke-width="1.4"/>
+          <line x1="628" y1="340" x2="630" y2="408" stroke="#c5cdd6" stroke-width="1.4"/>
+          <!-- Switches to APs -->
+          <line x1="62"  y1="298" x2="38"  y2="268" stroke="#a0aab8" stroke-width="1.2" stroke-dasharray="3,3"/>
+          <line x1="862" y1="298" x2="900" y2="268" stroke="#a0aab8" stroke-width="1.2" stroke-dasharray="3,3"/>
+          <!-- WLC mgmt path (dashed pink) -->
+          <path d="M 120 408 Q 190 360 95 340 Q 55 340 45 272" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="3,3" fill="none" opacity=".55"/>
+          <!-- Switches to end devices -->
+          <line x1="68"  y1="340" x2="65"  y2="488" stroke="#e0e6ee" stroke-width="1.2"/>
+          <line x1="116" y1="340" x2="128" y2="488" stroke="#e0e6ee" stroke-width="1.2"/>
+          <line x1="258" y1="340" x2="256" y2="488" stroke="#e0e6ee" stroke-width="1.2"/>
+          <line x1="308" y1="340" x2="314" y2="488" stroke="#e0e6ee" stroke-width="1.2"/>
+          <line x1="608" y1="340" x2="618" y2="488" stroke="#e0e6ee" stroke-width="1.2"/>
+          <line x1="812" y1="340" x2="816" y2="488" stroke="#e0e6ee" stroke-width="1.2"/>
+          <line x1="860" y1="340" x2="872" y2="488" stroke="#e0e6ee" stroke-width="1.2"/>
+
+          <!-- ── ANIMATED OVERLAY LINES ── -->
+          <!-- HSRP heartbeat -->
+          <line x1="220" y1="117" x2="740" y2="117" stroke="#df2935" stroke-width="2" stroke-dasharray="7,5" class="nl-hsrp"/>
+          <!-- VTP pulses -->
+          <line x1="405" y1="255" x2="95"  y2="298" stroke="#df2935" stroke-width="3.5" stroke-linecap="round" class="nl-vtp0"/>
+          <line x1="440" y1="258" x2="285" y2="298" stroke="#df2935" stroke-width="3.5" stroke-linecap="round" class="nl-vtp1"/>
+          <line x1="520" y1="258" x2="628" y2="298" stroke="#df2935" stroke-width="3.5" stroke-linecap="round" class="nl-vtp2"/>
+          <line x1="555" y1="255" x2="840" y2="298" stroke="#df2935" stroke-width="3.5" stroke-linecap="round" class="nl-vtp3"/>
+
+          <!-- ── ISP CLOUDS ── -->
+          <ellipse cx="160" cy="36" rx="60" ry="22" fill="#f0f4f8" stroke="#8a9bb0" stroke-width="1.5"/>
+          <text x="160" y="33" text-anchor="middle" class="nl" font-size="9" font-weight="700" fill="#3d4f63">ISP 1</text>
+          <text x="160" y="45" text-anchor="middle" class="nl" font-size="7" fill="#8a9bb0">Internet Uplink</text>
+
+          <ellipse cx="800" cy="36" rx="60" ry="22" fill="#f0f4f8" stroke="#8a9bb0" stroke-width="1.5"/>
+          <text x="800" y="33" text-anchor="middle" class="nl" font-size="9" font-weight="700" fill="#3d4f63">ISP 2</text>
+          <text x="800" y="45" text-anchor="middle" class="nl" font-size="7" fill="#8a9bb0">Internet Uplink</text>
+
+          <!-- ── ROUTERS ── -->
+          <!-- R1 Active -->
+          <rect x="100" y="93" width="120" height="48" rx="8" fill="white" stroke="#df2935" stroke-width="2"/>
+          <rect x="100" y="93" width="52" height="14" rx="4" fill="#df2935"/>
+          <text x="126" y="103" text-anchor="middle" class="nl" font-size="7" font-weight="700" fill="white">ACTIVE</text>
+          <text x="160" y="118" text-anchor="middle" class="nl" font-size="11" font-weight="800" fill="#1a2332">R1</text>
+          <text x="160" y="131" text-anchor="middle" class="nl" font-size="7.5" fill="#6b7a8d">Priority 255</text>
+
+          <!-- HSRP VIP label -->
+          <rect x="375" y="103" width="210" height="20" rx="4" fill="rgba(223,41,53,.06)" stroke="rgba(223,41,53,.28)" stroke-width="1"/>
+          <text x="480" y="117" text-anchor="middle" class="nl" font-size="8" font-weight="700" fill="#df2935">HSRP · Virtual IP 192.168.10.50</text>
+
+          <!-- R2 Standby -->
+          <rect x="740" y="93" width="120" height="48" rx="8" fill="white" stroke="#8a9bb0" stroke-width="1.5"/>
+          <rect x="740" y="93" width="60" height="14" rx="4" fill="#8a9bb0"/>
+          <text x="770" y="103" text-anchor="middle" class="nl" font-size="7" font-weight="700" fill="white">STANDBY</text>
+          <text x="800" y="118" text-anchor="middle" class="nl" font-size="11" font-weight="800" fill="#1a2332">R2</text>
+          <text x="800" y="131" text-anchor="middle" class="nl" font-size="7.5" fill="#6b7a8d">Priority 150</text>
+
+          <!-- ── CORE L3 SWITCH ── -->
+          <rect x="345" y="196" width="270" height="58" rx="10" fill="white" stroke="#df2935" stroke-width="2"/>
+          <rect x="345" y="196" width="72" height="15" rx="5" fill="#df2935"/>
+          <text x="381" y="207" text-anchor="middle" class="nl" font-size="7.5" font-weight="700" fill="white">LAYER 3</text>
+          <text x="480" y="222" text-anchor="middle" class="nl" font-size="10.5" font-weight="800" fill="#1a2332">Core Switch</text>
+          <text x="480" y="236" text-anchor="middle" class="nl" font-size="7.5" fill="#6b7a8d">Inter-VLAN Routing via SVIs · VTP Server · ip routing</text>
+          <text x="480" y="247" text-anchor="middle" class="nl" font-size="7" fill="#9aabb8">Domain: lab · Revision: 28 · 11 VLANs</text>
+
+          <!-- ── ACCESS SWITCHES ── -->
+          <rect x="47" y="298" width="96" height="42" rx="7" fill="white" stroke="#3d4f63" stroke-width="1.5"/>
+          <text x="95" y="316" text-anchor="middle" class="nl" font-size="10" font-weight="700" fill="#1a2332">SW0</text>
+          <text x="95" y="329" text-anchor="middle" class="nl" font-size="7" fill="#6b7a8d">VTP Client</text>
+
+          <rect x="237" y="298" width="96" height="42" rx="7" fill="white" stroke="#3d4f63" stroke-width="1.5"/>
+          <text x="285" y="316" text-anchor="middle" class="nl" font-size="10" font-weight="700" fill="#1a2332">SW1</text>
+          <text x="285" y="329" text-anchor="middle" class="nl" font-size="7" fill="#6b7a8d">VTP Client</text>
+
+          <rect x="580" y="298" width="96" height="42" rx="7" fill="white" stroke="#3d4f63" stroke-width="1.5"/>
+          <text x="628" y="316" text-anchor="middle" class="nl" font-size="10" font-weight="700" fill="#1a2332">SW2</text>
+          <text x="628" y="329" text-anchor="middle" class="nl" font-size="7" fill="#6b7a8d">VTP Client</text>
+
+          <rect x="792" y="298" width="96" height="42" rx="7" fill="white" stroke="#3d4f63" stroke-width="1.5"/>
+          <text x="840" y="316" text-anchor="middle" class="nl" font-size="10" font-weight="700" fill="#1a2332">SW3</text>
+          <text x="840" y="329" text-anchor="middle" class="nl" font-size="7" fill="#6b7a8d">VTP Client</text>
+
+          <!-- ── APs ── -->
+          <circle cx="37" cy="260" r="15" fill="#f5f7fc" stroke="#8a9bb0" stroke-width="1.5"/>
+          <text x="37" y="257" text-anchor="middle" class="nl" font-size="7" font-weight="700" fill="#3d4f63">AP0</text>
+          <text x="37" y="268" text-anchor="middle" class="nl" font-size="6" fill="#8a9bb0">LWAP</text>
+          <circle cx="37" cy="260" r="8" fill="none" stroke="#ff6b6b" stroke-width="1.2" class="nl-wa"/>
+          <circle cx="37" cy="260" r="8" fill="none" stroke="#ff6b6b" stroke-width="1.2" class="nl-wb"/>
+
+          <circle cx="903" cy="260" r="15" fill="#f5f7fc" stroke="#8a9bb0" stroke-width="1.5"/>
+          <text x="903" y="257" text-anchor="middle" class="nl" font-size="7" font-weight="700" fill="#3d4f63">AP1</text>
+          <text x="903" y="268" text-anchor="middle" class="nl" font-size="6" fill="#8a9bb0">LWAP</text>
+          <circle cx="903" cy="260" r="8" fill="none" stroke="#ff6b6b" stroke-width="1.2" class="nl-wc"/>
+          <circle cx="903" cy="260" r="8" fill="none" stroke="#ff6b6b" stroke-width="1.2" class="nl-wd"/>
+
+          <!-- ── INFRASTRUCTURE ── -->
+          <!-- WLC -->
+          <rect x="74" y="408" width="90" height="38" rx="7" fill="#fff5f5" stroke="#ff6b6b" stroke-width="1.5"/>
+          <text x="119" y="424" text-anchor="middle" class="nl" font-size="8.5" font-weight="700" fill="#1a2332">WLC</text>
+          <text x="119" y="436" text-anchor="middle" class="nl" font-size="6.5" fill="#6b7a8d">VLAN 40 · RADIUS</text>
+
+          <!-- Server0 -->
+          <rect x="233" y="408" width="92" height="38" rx="7" fill="#fff5f5" stroke="#ff6b6b" stroke-width="1.5"/>
+          <text x="279" y="424" text-anchor="middle" class="nl" font-size="8.5" font-weight="700" fill="#1a2332">Server0</text>
+          <text x="279" y="436" text-anchor="middle" class="nl" font-size="6.5" fill="#6b7a8d">DHCP · DNS · RADIUS</text>
+
+          <!-- IP Phone -->
+          <rect x="585" y="408" width="88" height="38" rx="7" fill="white" stroke="#8a9bb0" stroke-width="1.5"/>
+          <text x="629" y="424" text-anchor="middle" class="nl" font-size="8.5" font-weight="700" fill="#1a2332">IP Phone</text>
+          <text x="629" y="436" text-anchor="middle" class="nl" font-size="6.5" fill="#6b7a8d">VLAN 30 · VoIP</text>
+
+          <!-- ── END DEVICES ── -->
+          <rect x="48"  y="488" width="36" height="24" rx="4" fill="#f5f7fc" stroke="#d0d8e4" stroke-width="1"/>
+          <text x="66"  y="504" text-anchor="middle" class="nl" font-size="6.5" fill="#8a9bb0">PC</text>
+          <rect x="106" y="488" width="44" height="24" rx="4" fill="#f5f7fc" stroke="#d0d8e4" stroke-width="1"/>
+          <text x="128" y="504" text-anchor="middle" class="nl" font-size="6.5" fill="#8a9bb0">Laptop</text>
+          <rect x="238" y="488" width="36" height="24" rx="4" fill="#f5f7fc" stroke="#d0d8e4" stroke-width="1"/>
+          <text x="256" y="504" text-anchor="middle" class="nl" font-size="6.5" fill="#8a9bb0">PC</text>
+          <rect x="296" y="488" width="36" height="24" rx="4" fill="#f5f7fc" stroke="#d0d8e4" stroke-width="1"/>
+          <text x="314" y="504" text-anchor="middle" class="nl" font-size="6.5" fill="#8a9bb0">PC</text>
+          <rect x="600" y="488" width="36" height="24" rx="4" fill="#f5f7fc" stroke="#d0d8e4" stroke-width="1"/>
+          <text x="618" y="504" text-anchor="middle" class="nl" font-size="6.5" fill="#8a9bb0">PC</text>
+          <rect x="798" y="488" width="36" height="24" rx="4" fill="#f5f7fc" stroke="#d0d8e4" stroke-width="1"/>
+          <text x="816" y="504" text-anchor="middle" class="nl" font-size="6.5" fill="#8a9bb0">PC</text>
+          <rect x="854" y="488" width="44" height="24" rx="4" fill="#f5f7fc" stroke="#d0d8e4" stroke-width="1"/>
+          <text x="876" y="504" text-anchor="middle" class="nl" font-size="6.5" fill="#8a9bb0">Laptop</text>
+
+          <!-- ── ANIMATED PACKET ── -->
+          <circle r="4.5" fill="#df2935" filter="url(#pk-glow)">
+            <animateMotion dur="4s" repeatCount="indefinite">
+              <mpath href="#pkt1"/>
+            </animateMotion>
+          </circle>
+
+          <!-- ── ANNOTATION CALLOUTS ── -->
+          <!-- HSRP callout (right) -->
+          <rect x="598" y="88" width="190" height="54" rx="6" fill="white" stroke="#df2935" stroke-width="1.2"/>
+          <line x1="740" y1="113" x2="598" y2="113" stroke="#df2935" stroke-width="0.8" stroke-dasharray="3,2" opacity=".5"/>
+          <text x="608" y="102" class="nl" font-size="8" font-weight="700" fill="#df2935">⟳  HSRP Redundancy</text>
+          <text x="608" y="114" class="nl" font-size="7"   fill="#3d4f63">R1 Active  ·  Priority 255</text>
+          <text x="608" y="125" class="nl" font-size="7"   fill="#3d4f63">R2 Standby · Priority 150</text>
+          <text x="608" y="136" class="nl" font-size="6.5" fill="#8a9bb0">Automatic failover on R1 failure</text>
+
+          <!-- VTP callout (right of core) -->
+          <rect x="626" y="222" width="188" height="44" rx="6" fill="white" stroke="#df2935" stroke-width="1.2"/>
+          <line x1="615" y1="242" x2="626" y2="242" stroke="#df2935" stroke-width="0.8" stroke-dasharray="3,2" opacity=".5"/>
+          <text x="636" y="236" class="nl" font-size="8"   font-weight="700" fill="#df2935">≡  VTP · Domain: lab</text>
+          <text x="636" y="248" class="nl" font-size="7"   fill="#3d4f63">Core = Server · SW0–SW3 = Clients</text>
+          <text x="636" y="258" class="nl" font-size="7"   fill="#3d4f63">VLANs 10 · 20 · 30 · 40 propagated</text>
+
+          <!-- Server callout -->
+          <rect x="338" y="452" width="188" height="42" rx="6" fill="white" stroke="#ff6b6b" stroke-width="1.2"/>
+          <text x="348" y="466" class="nl" font-size="8"   font-weight="700" fill="#df2935">◈  Server0 Services</text>
+          <text x="348" y="478" class="nl" font-size="7"   fill="#3d4f63">DHCP (4 pools) · DNS · RADIUS/AAA</text>
+          <text x="348" y="488" class="nl" font-size="6.5" fill="#8a9bb0">WLC authenticated via RADIUS</text>
+
+          <!-- VLAN legend -->
+          <rect x="598" y="452" width="172" height="72" rx="6" fill="white" stroke="#8a9bb0" stroke-width="1"/>
+          <text x="608" y="466" class="nl" font-size="8" font-weight="700" fill="#1a2332">VLAN Segmentation</text>
+          <circle cx="614" cy="477" r="4" fill="rgba(223,41,53,.18)" stroke="#df2935" stroke-width="1"/>
+          <text x="623" y="480" class="nl" font-size="7" fill="#3d4f63">VLAN 10 — Admin</text>
+          <circle cx="614" cy="490" r="4" fill="rgba(255,107,107,.18)" stroke="#ff6b6b" stroke-width="1"/>
+          <text x="623" y="493" class="nl" font-size="7" fill="#3d4f63">VLAN 20 — User</text>
+          <circle cx="614" cy="503" r="4" fill="rgba(107,122,141,.18)" stroke="#6b7a8d" stroke-width="1"/>
+          <text x="623" y="506" class="nl" font-size="7" fill="#3d4f63">VLAN 30 — VoIP</text>
+          <circle cx="614" cy="516" r="4" fill="rgba(26,35,50,.15)" stroke="#292f36" stroke-width="1"/>
+          <text x="623" y="519" class="nl" font-size="7" fill="#3d4f63">VLAN 40 — Management</text>
+        </svg>
+      </div>
+
+      <div class="fp-highlights">
+        <div class="fp-highlight">
+          <div class="fp-hl-icon">&#x27F3;</div>
+          <div>
+            <strong>HSRP Gateway Redundancy</strong>
+            <p>R1 (Active, priority 255) and R2 (Standby, priority 150) share a virtual IP on VLAN 200, providing automatic failover with no end-user disruption.</p>
+          </div>
+        </div>
+        <div class="fp-highlight">
+          <div class="fp-hl-icon">&#x2261;</div>
+          <div>
+            <strong>VTP and VLAN Propagation</strong>
+            <p>Core switch acts as VTP server in domain "lab", automatically propagating VLANs 10 (Admin), 20 (User), 30 (VoIP), and 40 (Management) to all four access switches.</p>
+          </div>
+        </div>
+        <div class="fp-highlight">
+          <div class="fp-hl-icon">&#x1F4E1;</div>
+          <div>
+            <strong>Centralised Wireless and AAA</strong>
+            <p>One WLC manages two lightweight APs, authenticated via RADIUS against Server0, which also runs DHCP with four pools and DNS resolving the WLC management address.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CERTIFICATIONS -->
 <section class="section section-alt" id="certifications">
   <div class="container">
@@ -267,7 +537,7 @@
 
       <div class="cert-card cert-progress fade-in">
         <div class="cert-icon-wrap">
-          <svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="40" width="11" height="24" rx="3" fill="#ff6b6b" opacity=".45"/><rect x="27" y="30" width="11" height="44" rx="3" fill="#ff6b6b" opacity=".55"/><rect x="44" y="20" width="11" height="64" rx="3" fill="#ff6b6b" opacity=".75"/><rect x="61" y="30" width="11" height="44" rx="3" fill="#ff6b6b" opacity=".55"/><rect x="78" y="40" width="11" height="24" rx="3" fill="#ff6b6b" opacity=".4"/></svg>
+          <svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="40" width="11" height="24" rx="3" fill="#df2935"/><rect x="27" y="30" width="11" height="44" rx="3" fill="#df2935"/><rect x="44" y="20" width="11" height="64" rx="3" fill="#df2935" opacity=".9"/><rect x="61" y="30" width="11" height="44" rx="3" fill="#df2935"/><rect x="78" y="40" width="11" height="24" rx="3" fill="#df2935" opacity=".8"/></svg>
         </div>
         <div>
           <div class="cert-issuer">Cisco</div>
@@ -275,7 +545,7 @@
           <div class="cert-code">CCNA</div>
         </div>
         <div class="cert-date">Earned August 2026</div>
-        <span class="cert-status-badge progress">Earned</span>
+        <span class="cert-status-badge earned">Earned</span>
       </div>
 
     </div>
